@@ -16,5 +16,5 @@ sudo yum install conntrack -y
 sudo chmod +x /var/run/docker.sock 
 sudo usermod -aG docker $USER && newgrp docker
 
-minikube start --driver=calico --force
+minikube start --cni=calico
 minikube status 
